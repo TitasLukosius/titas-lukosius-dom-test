@@ -8,20 +8,9 @@ class API {
         .catch(failure)
     }
 
-    static deleteApartment = (id, success, failure) => {
+    static deleteApartment = (id, success, error) => {
         fetch(`${baseURL}/apartments/${id}`, {method: 'DELETE'})
-            .then(res => res.status === 200 ? success() : failure(res.statusText))
-            .catch(failure)
+            .then(res => res.status === 200 ? success() : error(res.statusText))
+            .catch(error => console.log(error))
     }
 }
-
-// API.fetchApartments(
-//   console.log,
-//   console.error
-// )
-
-// API.deleteApartment(
-//   "1",
-//   () => console.log('deleted'),
-//   console.error
-// )

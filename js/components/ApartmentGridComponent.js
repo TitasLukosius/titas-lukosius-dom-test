@@ -7,13 +7,33 @@ class ApartmentGridComponent {
         this.init();
     }
 
-    getApartments = () => API.fetchApartments(this.saveApartments, this.showError)
+    getApartments = () => setTimeout(() => {
+        API.fetchApartments(
+            (apartments) => {
+                this.state.loading = false;
+                this.saveApartments(apartments);
+            },
+            (error) => {
+                console.log(error);
+                alert(error);
+                this.state.loading = false;
+                this.render();
+            }
+        );
+    }, 1000);
 
     saveApartments = (apartments) => {
         this.state.apartments = apartments;
-        this.state.loading = false;
 
         this.render();
+    }
+
+    deleteApartment = (id) => {
+        API.deleteApartment(
+            id,
+            () => API.fetchApartments(this.getApartments, alert),
+            alert
+        )
     }
 
     wrapElement = (element) => {
@@ -35,13 +55,14 @@ class ApartmentGridComponent {
     }
 
     render = () => {
-        // console.log(this.state.apartments);
         if(this.state.loading) {
             this.htmlElement.innerHTML = `<div class="text-center"><img src="assets/loader.gif"/></div>`
         } else if(this.state.apartments.length > 0) {
             this.htmlElement.innerHTML = '';
-            const allApartments = this.state.apartments.map(apartment => new ApartmentCardComponent(apartment));
-            // console.log(allApartments);
+            const allApartments = this.state.apartments.map(({id, ...props}) => new ApartmentCardComponent({
+                ...props,
+                onDelete: () => this.deleteApartment(id)
+            }));
             const allApartmentsHTML = allApartments.map(apartment => apartment.htmlElement);
             const wrappedApartments = allApartmentsHTML.map(this.wrapElement);
             this.htmlElement.append(...wrappedApartments);
