@@ -40,7 +40,7 @@ class ApartmentGridComponent {
         const column = document.createElement('div');
         column.className = 'col-12 col-sm-6 col-lg-4 col-xl-3';
         column.appendChild(element);
-        return column
+        return column;
 
     }
 
@@ -49,7 +49,6 @@ class ApartmentGridComponent {
         this.getApartments();
         this.htmlElement = document.createElement('div');
         this.htmlElement.className = 'row g-2';
-        this.htmlElement.innerHTML = 'PaEjO';
 
         this.render();
     }

@@ -3,7 +3,6 @@ class ApartmentCardComponent {
 
     constructor(props) {
         this.props = props;
-        // console.log(this.props);
         this.init();
     }
 
@@ -49,8 +48,6 @@ class ApartmentCardComponent {
             </div>
             </div>
         `
-        // console.log(onDelete);
-        // console.log(this.props);
         const delButton = this.htmlElement.querySelector('.btn');
         delButton.addEventListener('click', this.props.onDelete);
     }
