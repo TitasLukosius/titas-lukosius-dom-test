@@ -65,6 +65,28 @@
             "currency": "€"
         },
         "imgSrc": "https://www.auto-data.net/images/f2/Opel-Astra-G-facelift-2002.jpg"
+      },
+      {
+        "id": "4",
+        "type": "flat",
+        "owner": {
+          "fullname": "Germante germante",
+          "email": "germante@germante.lt",
+          "phone": "862222218"
+        },
+        "rommCount": 4,
+        "square": 65.00,
+        "address": {
+            "city": "Kaunas",
+            "country": "Lithuania",
+            "street": "Laisves st",
+            "number": "86"
+        },
+        "price": {
+            "amount": 81000,
+            "currency": "€"
+        },
+        "imgSrc": "https://www.auto-data.net/images/f2/Opel-Astra-G-facelift-2002.jpg"
       }
     ]
   }
