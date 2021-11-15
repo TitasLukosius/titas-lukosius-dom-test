@@ -1,70 +1,70 @@
 {
-    "apartments": [
-      {
-        "id": "1",
-        "type": "house",
-        "owner": {
-          "fullname": "Titas Lukosius",
-          "email": "titas@titas.lt",
-          "phone": "868686868"
-        },
-        "rommCount": 5,
-        "square": 125.11,
-        "address": {
-            "city": "Vilnius",
-            "country": "Lithuania",
-            "street": "Antakalnis st",
-            "number": "2"
-        },
-        "price": {
-            "amount": 285200,
-            "currency": "$"
-        },
-        "imgSrc": "https://www.auto-data.net/images/f2/Opel-Astra-G-facelift-2002.jpg"
+  "apartments": [
+    {
+      "id": "1",
+      "type": "house",
+      "owner": {
+        "fullname": "Titas Lukosius",
+        "email": "titas@titas.lt",
+        "phone": "868686868"
       },
-      {
-        "id": "2",
-        "type": "flat",
-        "owner": {
-          "fullname": "Tomas Tomaitis",
-          "email": "tomas@tomas.lt",
-          "phone": "686868686"
-        },
-        "rommCount": 2,
-        "square": 49.99,
-        "address": {
-            "city": "Vilnius",
-            "country": "Lithuania",
-            "street": "Vilnius st",
-            "number": "3a"
-        },
-        "price": {
-            "amount": 86050,
-            "currency": "€"
-        },
-        "imgSrc": "https://www.auto-data.net/images/f2/Opel-Astra-G-facelift-2002.jpg"
+      "rommCount": 5,
+      "square": 125.11,
+      "address": {
+          "city": "Vilnius",
+          "country": "Lithuania",
+          "street": "Antakalnis st",
+          "number": "2"
       },
-      {
-        "id": "3",
-        "type": "cottage",
-        "owner": {
-          "fullname": "Greta Gretaite",
-          "email": "greta@greta.lt",
-          "phone": "861881818"
-        },
-        "rommCount": 4,
-        "square": 89.19,
-        "address": {
-            "city": "Kaunas",
-            "country": "Lithuania",
-            "street": "Laisves st",
-            "number": "25"
-        },
-        "price": {
-            "amount": 125000,
-            "currency": "€"
-        },
-        "imgSrc": "https://www.auto-data.net/images/f2/Opel-Astra-G-facelift-2002.jpg"
-      }
-    ]
-  }
+      "price": {
+          "amount": 285200,
+          "currency": "$"
+      },
+      "imgSrc": "https://q4g9y5a8.rocketcdn.me/wp-content/uploads/2020/02/home-banner-2020-02-min.jpg"
+    },
+    {
+      "id": "2",
+      "type": "flat",
+      "owner": {
+        "fullname": "Tomas Tomaitis",
+        "email": "tomas@tomas.lt",
+        "phone": "686868686"
+      },
+      "rommCount": 2,
+      "square": 49.99,
+      "address": {
+          "city": "Vilnius",
+          "country": "Lithuania",
+          "street": "Vilnius st",
+          "number": "3a"
+      },
+      "price": {
+          "amount": 86050,
+          "currency": "€"
+      },
+      "imgSrc": "https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg"
+    },
+    {
+      "id": "3",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Greta Gretaite",
+        "email": "greta@greta.lt",
+        "phone": "861881818"
+      },
+      "rommCount": 4,
+      "square": 89.19,
+      "address": {
+          "city": "Kaunas",
+          "country": "Lithuania",
+          "street": "Laisves st",
+          "number": "25"
+      },
+      "price": {
+          "amount": 125000,
+          "currency": "€"
+      },
+      "imgSrc": "https://vilniausnamai.lt/wp-content/uploads/2018/03/kotedzas-1029.jpg"
+    }
+  ]
+} 

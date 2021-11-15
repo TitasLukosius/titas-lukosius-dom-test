@@ -28,7 +28,7 @@ class ApartmentGridComponent {
         this.state.loading = true;
         this.getApartments();
         this.htmlElement = document.createElement('div');
-        this.htmlElement.className = 'row g-1';
+        this.htmlElement.className = 'row g-2';
         this.htmlElement.innerHTML = 'PaEjO';
 
         this.render();
